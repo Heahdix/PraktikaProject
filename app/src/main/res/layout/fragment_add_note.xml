@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.AddNoteFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/exit"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/buttonSave"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:background="@drawable/done"/>
+            </LinearLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/userSelect"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:hint="Время выполнения"
+                android:id="@+id/endDate"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:hint="Дедлайн"
+                android:id="@+id/deadline"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:hint="Заголовок"
+                android:id="@+id/title"
+                android:background="@android:color/transparent"
+                />
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:hint="Содержание"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

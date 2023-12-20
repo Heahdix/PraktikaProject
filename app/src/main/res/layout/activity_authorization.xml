@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authorization">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Авторизация"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/emailEditText"
+            android:padding="10dp"
+            android:hint="Почта"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordEditText"
+            android:padding="10dp"
+            android:hint="Пароль"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/authButton"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="60dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerButton"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:text="Регистрация"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
